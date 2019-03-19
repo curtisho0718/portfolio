@@ -1,5 +1,5 @@
 // colour palette
-$blue:rgb(1, 59, 126);
+$blue:rgb(39, 74, 114);
 $purple:#DCDBE8;
 $red: #FF3D45;
 $yellow: #E8BC59;
@@ -19,6 +19,10 @@ body {
     padding: 0;
 }
 
+.content{
+    margin: 50px;
+}
+
 .in-text-link {
     text-decoration: none;
     color: $blue;
@@ -36,6 +40,7 @@ h3,
 h4,
 h5 {
     font-family: $title-font;
+    margin-left: 10px;
 }
 h1{
     font-size: $standard-font-size*2;
@@ -243,3 +248,31 @@ footer{
     width: 100%;
 }
 
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+%container-item-basic{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container-item{
+    @extend %container-item-basic;
+    flex-shrink: 1;
+}
+.container-item-100{
+    @extend %container-item-basic;
+    width: 100%;
+}
+.container-item-50{
+    @extend %container-item-basic;
+    width:50%;
+}
+
+.container-item img{
+    max-height: 50vh;
+}
