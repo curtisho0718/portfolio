@@ -48,7 +48,7 @@ h1{
 }
 
 h2{
-font-size: $standard-font-size*1.2;
+font-size: $standard-font-size*1.7;
 }
 
 h3{
@@ -248,10 +248,13 @@ footer{
     width: 100%;
 }
 
+%container-basic{
+    display: flex;
+    flex-wrap: wrap;  
+}
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    @extend %container-basic;
     align-items: center;
 }
 
@@ -260,13 +263,21 @@ footer{
     padding: 20px;
 }
 
+.contact-container{
+    @extend %container-basic;
+}
+
 .container-item{
     @extend %container-item-basic;
     flex-shrink: 1;
 }
+
+.container-item-50 img{
+    filter: drop-shadow(10px 10px #0000002d);
+}
 .container-item-100{
     @extend %container-item-basic;
-    width: 100%;
+    width:100%;
 }
 .container-item-50{
     @extend %container-item-basic;
@@ -275,4 +286,5 @@ footer{
 
 .container-item img{
     max-height: 50vh;
+    filter: drop-shadow(10px 10px #0000002d);
 }
