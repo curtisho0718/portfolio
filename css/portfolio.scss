@@ -15,6 +15,8 @@ $standard-font-size:1em;
 // Text Styling 
 body {
     font-family: $body-font;
+    margin:0;
+    padding: 0;
 }
 
 .in-text-link {
@@ -36,7 +38,7 @@ h5 {
     font-family: $title-font;
 }
 h1{
-    font-size: $standard-font-size*1.5;
+    font-size: $standard-font-size*2;
 
 }
 
@@ -61,10 +63,15 @@ p{
 }
 
 .navigation-link:hover {
-    transition-duration: 1s;
+    transition-duration: 0.4s;
     color: $blue;
     border-bottom-style: solid;
     border-width: 5px;
+}
+
+nav{
+    margin-top:50px;
+    text-align: center;
 }
 
 nav a{
@@ -132,6 +139,20 @@ nav a:active{
     color: white;
 }
 
+.project-btn{
+    text-decoration: none;
+    border-style: solid;
+    padding:10px 50px;
+}
+
+.project-btn:hover{
+    background-color: $blue;
+    color:white;
+    transition-duration: 500ms;
+}
+
+// images
+
 .image-link{
     width: 25%;
 }
@@ -146,3 +167,79 @@ nav a:active{
 img{
     max-width: 100%;
 }
+
+// footer
+footer{
+    text-align: center;
+}
+
+// Container for Home page
+#about-container{
+    display: flex;
+    // size based on window's height
+    height:100vh;
+    align-items: center;
+}
+
+.about-item{
+    width:50%;
+}
+
+%name-sizing{
+    font-size:5em;
+    color:$blue;
+    font-weight: bold;
+    
+}
+
+.name{
+    @extend %name-sizing;
+}
+
+.last-name{
+    @extend %name-sizing
+}
+
+.last-name:hover{
+    font-size:5.5em;
+    text-shadow: 2px 2px #949494;
+    transition-duration: 400ms;
+}
+.name:hover{
+    font-size:5.5em;
+    text-shadow: 2px 2px #949494;
+    transition-duration: 400ms;
+}
+
+#project-showcase{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: $blue;
+}
+
+#project-showcase h1{
+    color:white;
+    padding-left:20px;
+}
+
+.project-showcase-item{
+    box-sizing: border-box;
+    padding: 0 10px;
+    width:50%;
+}
+
+.project-description{
+    position: relative;
+    top:20%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 50px;
+    height:50%;
+    filter: drop-shadow(12px 12px #0000003a)
+}
+.project-showcase-item-full{
+    width: 100%;
+}
+

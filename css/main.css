@@ -15,7 +15,7 @@ body {
 }
 
 h2 {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 h3 {
@@ -56,7 +56,7 @@ code {
   background-color: rgb(50,50,50);
   text-decoration: none;
   transition-property: background-color; 
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .button-nav:hover, .button-nav:focus {
