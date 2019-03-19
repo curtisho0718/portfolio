@@ -1,0 +1,126 @@
+body {
+  font-family: "Poppins", sans-serif; }
+
+.in-text-link {
+  text-decoration: none;
+  color: #013b7e;
+  font-family: "Poppins", sans-serif; }
+
+.in-text-link:hover {
+  color: #289e00;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1.1em; }
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em; }
+
+.navigation-link {
+  font-family: "Open Sans", sans-serif;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 1.5rem; }
+
+.navigation-link:hover {
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  color: #013b7e;
+  border-bottom-style: solid;
+  border-width: 5px; }
+
+nav a {
+  font-family: "Open Sans", sans-serif;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 50px; }
+
+nav a:hover {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #013b7e;
+  border-bottom-style: solid;
+  border-width: 5px; }
+
+nav a:active {
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-color: #1b1b1b; }
+
+.button-nav {
+  font-family: "Poppins", sans-serif;
+  border-style: solid;
+  background-color: white;
+  border-radius: 5px;
+  color: #1b1b1b; }
+
+.button-nav:hover {
+  background-color: #289e00;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.button-nav:active {
+  background-color: #013b7e; }
+
+.submit-btn, .reset-btn {
+  font-family: "Poppins", sans-serif;
+  border-style: solid;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #1b1b1b; }
+
+.submit-btn:hover {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  background-color: #289e00;
+  color: white; }
+
+.reset-btn:hover {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  background-color: #FF3D45;
+  color: white; }
+
+.image-link {
+  width: 25%; }
+
+.image-link:hover {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  padding: 10px;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px; }
+
+img {
+  max-width: 100%; }

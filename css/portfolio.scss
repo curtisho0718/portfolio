@@ -1,0 +1,148 @@
+// colour palette
+$blue:rgb(1, 59, 126);
+$purple:#DCDBE8;
+$red: #FF3D45;
+$yellow: #E8BC59;
+$green:rgb(40, 158, 0);
+$darkgrey:#1b1b1b;
+
+// Font
+$body-font: 'Poppins',
+sans-serif;
+$title-font: 'Open Sans',
+sans-serif;
+$standard-font-size:1em;
+// Text Styling 
+body {
+    font-family: $body-font;
+}
+
+.in-text-link {
+    text-decoration: none;
+    color: $blue;
+    font-family: $body-font;
+}
+
+.in-text-link:hover {
+    color: $green;
+    transition-duration: 1s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $title-font;
+}
+h1{
+    font-size: $standard-font-size*1.5;
+
+}
+
+h2{
+font-size: $standard-font-size*1.2;
+}
+
+h3{
+    font-size: $standard-font-size*1.1;
+}
+p{
+    font-family: $body-font;
+    font-size: $standard-font-size;
+}
+
+// Navigation
+.navigation-link {
+    font-family: $title-font;
+    color: $darkgrey;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navigation-link:hover {
+    transition-duration: 1s;
+    color: $blue;
+    border-bottom-style: solid;
+    border-width: 5px;
+}
+
+nav a{
+    font-family: $title-font;
+    color: $darkgrey;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+
+nav a:hover{
+    transition-duration: 0.5s;
+    color: $blue; 
+    border-bottom-style: solid;
+    border-width: 5px;
+}
+
+nav a:active{
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: $darkgrey;
+}
+
+// button
+.button-nav {
+    font-family: $body-font;
+    border-style: solid;
+    background-color: white;
+    border-radius: 5px;
+    color: $darkgrey;
+}
+
+.button-nav:hover {
+    background-color: $green;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.button-nav:active{
+    background-color: $blue;
+}
+
+.submit-btn, .reset-btn{
+    font-family: $body-font;
+    border-style: solid;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: $darkgrey;
+}
+
+.submit-btn:hover{
+    transition-duration: .5s;
+    background-color: $green;
+    color:white;
+}
+
+.reset-btn:hover{
+    transition-duration: .5s;
+    background-color: $red;
+    color: white;
+}
+
+.image-link{
+    width: 25%;
+}
+
+.image-link:hover{
+    transition-duration: 0.5s;
+    padding: 10px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+img{
+    max-width: 100%;
+}
