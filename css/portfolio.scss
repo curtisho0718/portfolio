@@ -1,5 +1,6 @@
 // colour palette
-$blue:rgb(39, 74, 114);
+$blue:rgb(50, 41, 95);
+$lightblue:#b4ceff;
 $purple:#DCDBE8;
 $red: #FF3D45;
 $yellow: #E8BC59;
@@ -221,11 +222,12 @@ footer{
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 10px 20px;
-    background: $blue;
+    background: $lightblue;
 }
 
 #project-showcase h1{
-    color:white;
+    text-align: center;
+    color:$blue;
     padding-left:20px;
 }
 
@@ -240,6 +242,7 @@ footer{
     top:20%;
     background-color: #ffffff;
     box-sizing: border-box;
+    border-radius: 10px;
     padding: 50px;
     height:50%;
     filter: drop-shadow(12px 12px #0000003a)
