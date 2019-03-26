@@ -145,7 +145,7 @@ nav a:active {
   border-radius: 5px; }
 
 img {
-  max-width: 100%; }
+  width: 100%; }
 
 footer {
   text-align: center; }
@@ -154,7 +154,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px;
+  min-height: 100vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -190,7 +195,7 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 20px;
-  background: #b4ceff; }
+  background: #89a6ff34; }
 
 #project-showcase h1 {
   text-align: center;
@@ -205,13 +210,13 @@ footer {
 
 .project-description {
   position: relative;
-  top: 20%;
+  margin-top: 30%;
+  margin-bottom: 20px;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 50px;
-  height: 50%;
   -webkit-filter: drop-shadow(12px 12px #0000003a);
   filter: drop-shadow(12px 12px #0000003a); }
 
@@ -240,8 +245,8 @@ footer {
   flex-shrink: 1; }
 
 .container-item-50 img {
-  -webkit-filter: drop-shadow(10px 10px #0000002d);
-  filter: drop-shadow(10px 10px #0000002d); }
+  -webkit-filter: drop-shadow(4px 4px #0000002d);
+  filter: drop-shadow(4px 4px #0000002d); }
 
 .container-item-100 {
   width: 100%; }
@@ -253,3 +258,45 @@ footer {
   max-height: 50vh;
   -webkit-filter: drop-shadow(10px 10px #0000002d);
   filter: drop-shadow(10px 10px #0000002d); }
+
+@media only screen and (max-width: 768px) {
+  .name {
+    font-size: 3rem; }
+  .last-name {
+    font-size: 3rem; } }
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.3rem; }
+  h2 {
+    font-size: 1.2rem; }
+  nav a {
+    font-size: 1rem; }
+  .name {
+    font-size: 1.4rem; }
+  .last-name {
+    font-size: 1.4rem; }
+  .about-item {
+    width: 100%; }
+  .project-showcase-item {
+    width: 100%; }
+  nav a {
+    margin-left: 20px; }
+  .project-btn {
+    padding: 5px 20px; }
+  .container-item-50 {
+    width: 100%; } }
+
+@media only screen and (min-width: 2500px) {
+  nav a {
+    font-size: 3rem; }
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.5rem; }
+  .name {
+    font-size: 7rem; }
+  .last-name {
+    font-size: 7rem; }
+  p {
+    font-size: 2rem; } }

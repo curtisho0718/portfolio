@@ -1,6 +1,6 @@
 // colour palette
 $blue:rgb(50, 41, 95);
-$lightblue:#eff4ff;
+$lightblue:#89a6ff34;
 $purple:#DCDBE8;
 $red: #FF3D45;
 $yellow: #E8BC59;
@@ -171,7 +171,7 @@ nav a:active{
     border-radius: 5px;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 // footer
@@ -182,8 +182,11 @@ footer{
 // Container for Home page
 #about-container{
     display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px;
     // size based on window's height
-    height:100vh;
+    min-height:100vh;
     align-items: center;
 }
 
@@ -239,12 +242,13 @@ footer{
 
 .project-description{
     position: relative;
-    top:20%;
+    margin-top: 30%;
+    margin-bottom: 20px;
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 50px;
-    height:50%;
+    // height:50%;
     filter: drop-shadow(12px 12px #0000003a)
 }
 .project-showcase-item-full{
@@ -276,7 +280,7 @@ footer{
 }
 
 .container-item-50 img{
-    filter: drop-shadow(10px 10px #0000002d);
+    filter: drop-shadow(4px 4px #0000002d);
 }
 .container-item-100{
     @extend %container-item-basic;
@@ -290,4 +294,81 @@ footer{
 .container-item img{
     max-height: 50vh;
     filter: drop-shadow(10px 10px #0000002d);
+}
+
+
+// Responsive
+// tablet
+@media only screen and (max-width: 768px) {
+
+    .name{
+        font-size: 3rem;
+    }
+    .last-name{
+        font-size: 3rem;
+    }
+    
+}
+// phone
+@media only screen and (max-width: 425px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+
+    .name{
+        font-size: 1.4rem;
+    }
+    .last-name{
+        font-size: 1.4rem;
+    }
+    .about-item{
+        width:100%;
+    }
+    
+    .project-showcase-item{
+        width:100%;
+    }
+
+    nav a{
+        margin-left: 20px;
+    }
+
+    .project-btn{
+        padding: 5px 20px;
+    }
+
+
+    // MISA banner page
+    .container-item-50{
+        width:100%;
+    }
+}
+
+// 4k
+@media only screen and (min-width: 2500px) {
+    nav a{
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .name{
+        font-size: 7rem;
+    }
+    .last-name{
+        font-size: 7rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
 }
