@@ -20,6 +20,9 @@ body {
     padding: 0;
 }
 
+.home-content{
+    margin-top: 55px;
+}
 .content{
     margin: 50px;
 }
@@ -76,8 +79,15 @@ p{
 }
 
 nav{
-    margin-top:50px;
-    text-align: center;
+    position:fixed;
+    top:0;
+    z-index:1;
+    display:flex;
+    width:100%;
+    justify-content: center;
+    background:white;
+    margin:0;
+    padding:20px 0;
 }
 
 nav a{
@@ -157,6 +167,12 @@ nav a:active{
     transition-duration: 500ms;
 }
 
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+}
 // images
 
 .image-link{
@@ -191,9 +207,21 @@ footer{
 }
 
 .about-item{
-    width:50%;
+    width:45%;
 }
 
+.item-side{
+    width:10%;
+    height:100%;
+    h1{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+
+.item-right{
+    width:90%;
+}
 %name-sizing{
     font-size:5em;
     color:$blue;
@@ -223,6 +251,7 @@ footer{
 #project-showcase{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     box-sizing: border-box;
     padding: 10px 20px;
     background: $lightblue;
@@ -242,14 +271,13 @@ footer{
 
 .project-description{
     position: relative;
-    margin-top: 30%;
     margin-bottom: 20px;
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 50px;
     // height:50%;
-    filter: drop-shadow(12px 12px #0000003a)
+    filter: drop-shadow(4px 4px #0000003a)
 }
 .project-showcase-item-full{
     width: 100%;
@@ -312,15 +340,29 @@ footer{
 // phone
 @media only screen and (max-width: 425px) {
     h1{
-        font-size: 1.3rem;
+        font-size: $standard-font-size*2;
     }
     h2{
-        font-size: 1.2rem;
+        font-size: $standard-font-size*1.5;
     }
     nav a{
         font-size: 1rem;
     }
 
+    .item-side{
+        width: 100%;
+        h1{
+            writing-mode:horizontal-tb;
+        }
+    }
+
+    .projects{
+        width: 100%;
+    }
+    
+    .item-right{
+        width:100%;
+    }
     .name{
         font-size: 1.4rem;
     }
@@ -331,6 +373,9 @@ footer{
         width:100%;
     }
     
+    #project-showcase{
+        padding:10px 5px;
+    }
     .project-showcase-item{
         width:100%;
     }
@@ -350,25 +395,43 @@ footer{
     }
 }
 
-// 4k
-@media only screen and (min-width: 2500px) {
+// large screen
+@media only screen and (min-width:1440px){
     nav a{
-        font-size: 3rem;
+        font-size: $standard-font-size*2.3;
     }
     h1{
-        font-size: 3rem;
+        font-size: $standard-font-size*2;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: $standard-font-size*1.8;
     }
-    .name{
-        font-size: 7rem;
-    }
-    .last-name{
-        font-size: 7rem;
-    }
-
+    
     p{
-        font-size: 2rem;
+        font-size: $standard-font-size*1.2;
     }
+    
+    .project-btn{
+        font-size: $standard-font-size*1.2;
+    }
+}
+// 4k
+@media only screen and (min-width: 2560px) {
+nav a{
+    font-size: $standard-font-size*3.5;
+}
+h1{
+    font-size: $standard-font-size*5;
+}
+h2{
+    font-size: $standard-font-size*4.5;
+}
+
+p{
+    font-size: $standard-font-size*2.5;
+}
+
+.project-btn{
+    font-size: $standard-font-size*2.5;
+}
 }
