@@ -51,62 +51,79 @@
             </div>
             <!-- End of about content -->
         </div>
-        
-        
-        <div id="project-showcase">
-            
+
+        <div>
+            <button onclick="openProject('graphicDesign')">Graphic Project</button>
+            <button onclick="openProject('illustration')">Illustration</button>
+        </div>
+
+        <!-- Start of Graphic Design Projects -->
+        <div class="project-showcase" id="graphicDesign">
+
             <div class="item-side">
                 <h1>Projects</h1>
             </div>
             <div class="item-right">
-                    <div class="projects">
-                            <div class="project-showcase-item">
-                                    <a href="#">
-                                        <img alt="banner" src="img/project_preview/banner.png">
-                                    </a>
-                                </div>
-                                <div class="project-showcase-item">
-                                    <div class="project-description">
-                                        <h2>MISA Banner</h2>
-                                        <p>
-                                            Management Systems Information Student Association (MISA) is a student-organized club that
-                                            promotes
-                                            Management Systems Information, a Business Concentration Program at Simon Fraser University. I
-                                            created a series of branding
-                                            materials for MISA. The branding materials include online posters, event photography,
-                                            sponsorship package and promotional materials.
-                    
-                                        </p>
-                                        <a class="project-btn" href="misa_banner.html"> See Detail</a>
-                                    </div>
-                                </div>
+                <div class="projects">
+                    <div class="project-showcase-item">
+                        <a href="#">
+                            <img alt="banner" src="img/project_preview/banner.png">
+                        </a>
                     </div>
-                    <div class="projects">
-                                <div class="project-showcase-item">
-                                    <a href="#">
-                                        <img alt="drawing" src="img/dab_dog/dab_dog.png">
-                                    </a>
-                                </div>
-                    
-                                <div class="project-showcase-item">
-                                    <div class="project-description">
-                                        <h2>The Dabbing Dog Illustration</h2>
-                                        <p>
-                                            A illustration of a dog performing dabbing. This piece is inspired by current mainstream
-                                            cultures. It is created by using Photoshop and a drawing tablet.
-                    
-                                        </p>
-                                        <a class="project-btn" href="dabbing_dog.html"> See Detail</a>
-                                    </div>
-                    
-                                </div>
-                        
+                    <div class="project-showcase-item">
+                        <div class="project-description">
+                            <h2>MISA Banner</h2>
+                            <p>
+                                Management Systems Information Student Association (MISA) is a student-organized club
+                                that
+                                promotes
+                                Management Systems Information, a Business Concentration Program at Simon Fraser
+                                University. I
+                                created a series of branding
+                                materials for MISA. The branding materials include online posters, event photography,
+                                sponsorship package and promotional materials.
+
+                            </p>
+                            <a class="project-btn" href="misa_banner.html"> See Detail</a>
+                        </div>
                     </div>
+                </div>
             </div>
-           
-            
+            <!-- End of Graphic Design Project -->
         </div>
 
+        <!-- start of Illustration Projects -->
+
+        <div class="project-showcase" id="illustration" style="display: none">
+
+            <div class="item-side">
+                <h1>Projects</h1>
+            </div>
+            <div class="item-right">
+                <div class="projects">
+                    <div class="project-showcase-item">
+                        <a href="#">
+                            <img alt="drawing" src="img/dab_dog/dab_dog.png">
+                        </a>
+                    </div>
+
+                    <div class="project-showcase-item">
+                        <div class="project-description">
+                            <h2>The Dabbing Dog Illustration</h2>
+                            <p>
+                                A illustration of a dog performing dabbing. This piece is inspired by current mainstream
+                                cultures. It is created by using Photoshop and a drawing tablet.
+
+                            </p>
+                            <a class="project-btn" href="dabbing_dog.html"> See Detail</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Illustration Project -->
+        </div>
         <div id="contact-container">
             <div class="container-item-100">
                 <h2>Contact Me</h2>
@@ -124,5 +141,6 @@
 
 
 </body>
+<script src="js/tab.js"></script>
 
 </html>

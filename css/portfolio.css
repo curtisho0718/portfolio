@@ -176,6 +176,22 @@ img {
 footer {
   text-align: center; }
 
+button {
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  color: #32295f;
+  background: #cddbff;
+  text-decoration: none;
+  padding: 10px 50px;
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+button:hover {
+  background: #adc1ff34; }
+
+button:focus {
+  background: #adc1ff34; }
+
 #about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +240,7 @@ footer {
   -o-transition-duration: 400ms;
   transition-duration: 400ms; }
 
-#project-showcase {
+.project-showcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +252,7 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 20px;
-  background: #89a6ff34; }
+  background: #adc1ff34; }
 
 #project-showcase h1 {
   text-align: center;
@@ -328,7 +344,7 @@ footer {
     font-size: 1.4rem; }
   .about-item {
     width: 100%; }
-  #project-showcase {
+  #project-showcase-graphic-design {
     padding: 10px 5px; }
   .project-showcase-item {
     width: 100%; }

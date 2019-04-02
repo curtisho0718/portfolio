@@ -1,6 +1,7 @@
 // colour palette
 $blue:rgb(50, 41, 95);
-$lightblue:#89a6ff34;
+$lightblue:#adc1ff34;
+$paleblue:#cddbff;
 $purple:#DCDBE8;
 $red: #FF3D45;
 $yellow: #E8BC59;
@@ -195,6 +196,25 @@ footer{
     text-align: center;
 }
 
+button{
+    font-family: $title-font;
+    border: none;
+    color: $blue;
+    background: $paleblue;
+    text-decoration: none;
+    padding:10px 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button:hover{
+    background: $lightblue;
+
+}
+
+button:focus{
+    background: $lightblue;
+}
 // Container for Home page
 #about-container{
     display: flex;
@@ -248,7 +268,8 @@ footer{
     transition-duration: 400ms;
 }
 
-#project-showcase{
+
+.project-showcase{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -373,7 +394,7 @@ footer{
         width:100%;
     }
     
-    #project-showcase{
+    #project-showcase-graphic-design{
         padding:10px 5px;
     }
     .project-showcase-item{
