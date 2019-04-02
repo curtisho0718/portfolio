@@ -66,9 +66,9 @@ nav {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.39);
   margin: 0;
-  padding: 20px 0; }
+  padding: 10px 0; }
 
 nav a {
   font-family: "Open Sans", sans-serif;
@@ -353,11 +353,13 @@ button:focus {
   .project-btn {
     padding: 5px 20px; }
   .container-item-50 {
+    width: 100%; }
+  button {
     width: 100%; } }
 
 @media only screen and (min-width: 1440px) {
   nav a {
-    font-size: 2.1em; }
+    font-size: 2em; }
   h1 {
     font-size: 2em; }
   h2 {
@@ -377,4 +379,6 @@ button:focus {
   p {
     font-size: 2.5em; }
   .project-btn {
-    font-size: 2.5em; } }
+    font-size: 2.5em; }
+  button {
+    font-size: 3.5em; } }

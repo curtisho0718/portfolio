@@ -4,5 +4,5 @@ function openProject(project) {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }
-    document.getElementById(project).style.display = "block"; 
+    document.getElementById(project).style.display = "flex"; 
   }
