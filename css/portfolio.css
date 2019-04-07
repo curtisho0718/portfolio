@@ -1,3 +1,9 @@
+.lightblue {
+  background: #cddbff; }
+
+.white {
+  background: white; }
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -7,7 +13,7 @@ body {
   margin-top: 55px; }
 
 .content {
-  margin: 50px; }
+  margin-top: 65px; }
 
 .in-text-link {
   text-decoration: none;
@@ -25,14 +31,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Open Sans", sans-serif;
-  margin-left: 10px; }
+  font-family: "Open Sans", sans-serif; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 1.4em; }
 
 h2 {
-  font-size: 1.7em; }
+  font-size: 1.2em; }
 
 h3 {
   font-size: 1.1em; }
@@ -187,7 +192,10 @@ button {
   font-weight: 600; }
 
 button:hover {
-  background: #adc1ff34; }
+  background: #adc1ff34;
+  -webkit-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  transition-duration: 600ms; }
 
 button:focus {
   background: #adc1ff34; }
@@ -280,14 +288,13 @@ button:focus {
   width: 100%; }
 
 #project-section {
-  position: relative;
-  height: 8rem; }
+  position: relative; }
 
 .project-section-btn {
   position: absolute;
   top: -8rem; }
 
-.container, .contact-container {
+.container, #contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,16 +304,23 @@ button:focus {
 .container {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 10px; }
 
 .container-item, .container-item-100, .container-item-50 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px; }
 
-.container-item {
-  -ms-flex-negative: 1;
-  flex-shrink: 1; }
+#contact-container {
+  background: #6e4fb8;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh; }
 
 .container-item-50 img {
   -webkit-filter: drop-shadow(4px 4px #0000002d);
@@ -317,6 +331,13 @@ button:focus {
 
 .container-item-50 {
   width: 50%; }
+
+.contact-container-item-50 {
+  width: 25%; }
+  .contact-container-item-50 h2, .contact-container-item-50 h3 {
+    color: white; }
+  .contact-container-item-50 p {
+    color: white; }
 
 .container-item img {
   max-height: 50vh;
@@ -331,9 +352,9 @@ button:focus {
 
 @media only screen and (max-width: 425px) {
   h1 {
-    font-size: 2em; }
-  h2 {
     font-size: 1.5em; }
+  h2 {
+    font-size: 1.3em; }
   nav a {
     font-size: 1rem; }
   .item-side {
@@ -363,6 +384,11 @@ button:focus {
   .container-item-50 {
     width: 100%; }
   button {
+    width: 100%; }
+  .contact-container-item-50 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
     width: 100%; } }
 
 @media only screen and (min-width: 1440px) {
