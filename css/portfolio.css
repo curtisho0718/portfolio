@@ -279,6 +279,14 @@ button:focus {
 .project-showcase-item-full {
   width: 100%; }
 
+#project-section {
+  position: relative;
+  height: 8rem; }
+
+.project-section-btn {
+  position: absolute;
+  top: -8rem; }
+
 .container, .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;

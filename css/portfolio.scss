@@ -304,6 +304,16 @@ button:focus{
     width: 100%;
 }
 
+#project-section{
+position: relative;
+height: 8rem;
+}
+
+.project-section-btn{
+    position: absolute;
+    top:-8rem;
+}
+
 %container-basic{
     display: flex;
     flex-wrap: wrap;  
