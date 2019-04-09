@@ -79,7 +79,7 @@ nav a {
   font-family: "Open Sans", sans-serif;
   color: #1b1b1b;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-left: 50px; }
 
@@ -325,6 +325,10 @@ button:focus {
 .container-item-50 img {
   -webkit-filter: drop-shadow(4px 4px #0000002d);
   filter: drop-shadow(4px 4px #0000002d); }
+
+.final-design {
+  max-height: 100vh;
+  width: auto; }
 
 .container-item-100 {
   width: 100%; }
